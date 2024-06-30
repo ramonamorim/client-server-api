@@ -19,7 +19,7 @@ type Cotacao struct {
 }
 
 func main() {
-	ctx, cancel := context.WithTimeout(context.Background(), time.Millisecond*200)
+	ctx, cancel := context.WithTimeout(context.Background(), time.Millisecond*300)
 	defer cancel()
 
 	bid, err := solicitarCotacao(ctx)
